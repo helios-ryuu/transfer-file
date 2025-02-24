@@ -1,0 +1,85 @@
+/* Áp dụng font toàn cục */
+body,
+input,
+button,
+form,
+ul,
+li {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Các quy tắc cơ bản cho body */
+body {
+  margin: 20px;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* Style cho tiêu đề */
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Style cho form */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style cho input file */
+input[type="file"] {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+/* Style cho button */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Style cho danh sách file */
+.file-list {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+/* Style cho từng mục file */
+.file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e9ecef;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 600px) {
+  form {
+    width: 90%;
+    padding: 10px;
+  }
+  button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+}

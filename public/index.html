@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Upload Files</title>
+  <!-- Google Font: JetBrains Mono -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2>Upload Files</h2>
+  <!-- Thông báo upload thành công (ban đầu ẩn đi) -->
+  <div id="uploadAlert" style="display:none; background: #d4edda; color: #155724; padding: 10px; border-radius: 5px; margin-bottom: 15px; text-align: center;">
+    Upload thành công!
+  </div>
+  <form id="uploadForm" method="POST" action="/upload" enctype="multipart/form-data">
+      <input type="file" name="files" id="filesInput" multiple="" required="" aria-label="Chọn file" title="Chọn các file để upload"/>
+      <button type="submit">Upload Files</button>
+  </form>
+  <ul id="selectedFiles" class="file-list"></ul>
+
+  <!-- Socket.io client -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="success.js"></script>
+</body>
+</html>

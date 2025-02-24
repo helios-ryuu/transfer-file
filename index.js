@@ -8,5 +8,5 @@ const { server, port } = createServer({
 });
 
 server.listen(port, "0.0.0.0", () => {
-  console.log(`Transfer đang được host tại https://localhost:${port}`);
+  console.log(`Transfer đang được host tại https://localhost:${port}. Để dừng server, nhấn Ctrl + C`);
 });

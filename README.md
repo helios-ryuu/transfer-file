@@ -1,0 +1,3 @@
+- Chạy file START.bat để host ứng dụng ở cổng 3000 tại server (máy chạy START.bat)
+- Sử dụng ipconfig để tìm IPv4 của server
+- Sử dụng các thiết bị thuộc cùng mạng với server và truy cập vào https://<IPv4 của server>:3000/ để truy cập vào web (Ví dụ: https://192.168.1.12:3000/
